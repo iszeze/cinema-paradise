@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.logo {
+    width: 70%;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+.main {
+    display: flex;
+    position: relative;
+    z-index: 2;
+  
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.main .mainwall h1 {
+    color: #2e3d3d;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 7vw;
+}
+.main .mainwall button {
+    background-color: transparent;
+    padding: 10px 36px;
+    border-radius: 999999px;
+    border: 3px solid #005469;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.main .mainwall{
+    width: 40%;
+}
+.main .iceage-img img.main-img{
+    width:100%;
+    
+}
+img.main-img {
+    width: 50%;
+}
+
+
+
+
+section#main img.gradient-img{
+    position: absolute;
+    z-index: 1;
+    bottom: 121px;
+    width: 100%;
+    height: 31vh;
+}
+.container {
+    justify-content: center;
+    margin-top: 13vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 3vw;
+}
+
+.container .container-img {
+    position: relative;
+}
+
+.container .like {
+    position: absolute;
+    top: 1vw;
+    left: 17vw;
+}
+
+.container .container-img img {
+    width: 21vw;
+}
+.container .like img {
+    width: 3vw;
+}
+.container .details {
+    text-align: center;
+}
+
+.container .details h2 {
+    padding: 3px 0px;
+    font-size: 3vw;
+}
+section#main {
+    background-color: white;
+    background-image: linear-gradient(180deg, white, #33aeff61);
+}
+
+
+@media screen and (max-width: 600px) {
+    .main {
+       
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
